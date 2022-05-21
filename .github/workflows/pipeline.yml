@@ -27,7 +27,7 @@ jobs:
         run: python -m unittest -v test
   
       - name: Install Requirements
-        run:  pip install flask-wtf
+        run:  pip install flask flask-wtf
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
